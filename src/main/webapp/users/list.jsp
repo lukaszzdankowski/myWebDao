@@ -27,7 +27,7 @@
                 <td>${user.email}</td>
                 <td>
                     <a href="/user/delete?id=${user.id}">Delete</a>
-                    <a href="url">Edit</a>
+                    <a href="/user/edit?id=${user.id}">Edit</a>
                     <a href="/user/show?id=${user.id}">Show</a>
                 </td>
             </tr>
