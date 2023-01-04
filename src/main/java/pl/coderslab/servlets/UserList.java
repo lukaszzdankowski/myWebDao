@@ -17,7 +17,6 @@ public class UserList extends HttpServlet {
             throws ServletException, IOException {
         User[] userList = UserDao.findAll();
         req.setAttribute("users", userList);
-        getServletContext().getRequestDispatcher("/users/list.jsp")
-                .forward(req, resp);
+        getServletContext().getRequestDispatcher("/users/list.jsp").forward(req, resp);
     }
 }
