@@ -16,12 +16,12 @@
     <form action = "/user/edit" method="post">
         <input type="hidden" name="id" value="${user.id}"/>
         <label for="username">Name:</label><br>
-        <input type="text" id="username" name="username" value=${user.userName}><br>
+        <input type="text" id="username" name="username" value="${user.userName}" placeholder="Old name: ${user.userName}"><br>
         <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email" value=${user.email}><br>
+        <input type="email" id="email" name="email" value="${user.email}" placeholder="Old email: ${user.email}"><br>
         <label for="password">Password:</label><br>
-        <input type="text" id="password" name="password" value="Type new password"><br>
-        <input type="submit" value="Zapisz">
+        <input type="password" id="password" name="password" placeholder="Type new password"><br>
+        <input type="submit" value="Save user">
     </form>
 
 </div>

@@ -15,11 +15,11 @@
 
     <form action = "/user/add" method="post">
         <label for="username">Name:</label><br>
-        <input type="text" id="username" name="username"><br>
+        <input type="text" id="username" name="username" placeholder="Type name of new user"><br>
         <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email"><br>
+        <input type="email" id="email" name="email" placeholder="Type email of new user"><br>
         <label for="password">Password:</label><br>
-        <input type="text" id="password" name="password"><br>
+        <input type="password" id="password" name="password" placeholder="Type password of new user"><br>
         <input type="submit" value="Save user">
     </form>
 
