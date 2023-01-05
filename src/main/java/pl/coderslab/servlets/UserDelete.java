@@ -20,9 +20,15 @@ public class UserDelete extends HttpServlet {
         try {
             int id = Integer.valueOf(idString);
             User user = UserDao.read(id);
-            req.setAttribute("user", user);
-            getServletContext().getRequestDispatcher("/users/delete.jsp").forward(req, resp);
+
+            if (user != null) {
+                req.setAttribute("user", user);
+                getServletContext().getRequestDispatcher("/users/delete.jsp").forward(req, resp);
+            }
+
+            resp.sendRedirect(req.getContextPath() + "/user/list");
         } catch (NumberFormatException e) {
+            resp.sendRedirect(req.getContextPath() + "/user/list");
         }
     }
 
