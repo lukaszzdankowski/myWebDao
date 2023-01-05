@@ -20,7 +20,7 @@
         <input type="text" id="email" name="email"><br>
         <label for="password">Password:</label><br>
         <input type="text" id="password" name="password"><br>
-        <input type="submit" value="Zapisz">
+        <input type="submit" value="Save user">
     </form>
 
 </div>
